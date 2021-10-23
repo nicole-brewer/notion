@@ -20,7 +20,9 @@ jobs:
           NOTION_DB_DAILY_SUMMARY: 87818281a4434c06b8cd6cc9e52e2163
           NOTION_PROPERTY_SPRINT: Sprint
           NOTION_PROPERTY_ESTIMATE: Estimate
-          NOTION_PROPERTY_PATTERN_STATUS_EXCLUDE: Completed
+          NOTION_PROPERTY_PATTERN_STATUS_EXCLUDE: Done
+          INCLUDE_WEEKENDS: true
+          
       - name: Commit burndown chart
         run: |
           git config --local user.email "brewer36@purdue.edu"
